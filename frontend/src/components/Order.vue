@@ -20,6 +20,11 @@
             v-model="value.status"
             :editMode="editMode"
         />
+        <String
+            label="Address"
+            v-model="value.address"
+            :editMode="editMode"
+        />
         <v-row class="ma-0 pa-0">
             <v-spacer></v-spacer>
             <v-btn width="64px" color="primary" @click="save">

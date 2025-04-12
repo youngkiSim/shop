@@ -29,6 +29,7 @@
                         <th>ProductId</th>
                         <th>Qty</th>
                         <th>Status</th>
+                        <th>Address</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -42,6 +43,7 @@
                             <td class="whitespace-nowrap" label="ProductId">{{ val.productId }}</td>
                             <td class="whitespace-nowrap" label="Qty">{{ val.qty }}</td>
                             <td class="whitespace-nowrap" label="Status">{{ val.status }}</td>
+                            <td class="whitespace-nowrap" label="Address">{{ val.address }}</td>
                             <v-row class="ma-0 pa-4 align-center">
                                 <v-spacer></v-spacer>
                                 <Icon style="cursor: pointer;" icon="mi:delete" @click="deleteRow(val)" />
@@ -107,6 +109,7 @@
                             <String label="ProductId" v-model="selectedRow.productId" :editMode="true"/>
                             <Number label="Qty" v-model="selectedRow.qty" :editMode="true"/>
                             <String label="Status" v-model="selectedRow.status" :editMode="true"/>
+                            <String label="Address" v-model="selectedRow.address" :editMode="true"/>
                             <v-divider class="border-opacity-100 my-divider"></v-divider>
                             <v-layout row justify-end>
                                 <v-btn
